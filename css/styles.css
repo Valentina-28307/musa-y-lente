@@ -250,6 +250,13 @@
     display: flex;
     gap: 25px;
     padding: 10px 0px;
+
+}
+
+.navbar-collapse {
+    display: flex;
+    gap: 50px;
+    align-items: center;
 }
 
 /* ===== MEDIA QUERIES ===== */
