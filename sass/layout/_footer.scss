@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+footer {
+    background-color: $color-negro;
+    color: $color-blanco;
+    text-align: center;
+
+    .fuente {
+        color: $color-blanco;
+    }
+
+    .lista-footer {
+        justify-content: center;
+        display: flex;
+        gap: 25px;
+        padding: 10px 0px;
+    }
+
+    .parrafo-footer {
+        font-family: $fuente-texto;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 15px 0px;
+    }
+}

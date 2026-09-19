@@ -1,0 +1,53 @@
+@use "../utilities/variables" as *;
+
+.titulos2 {
+    font-family: $fuente-titulos;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-negro;
+}
+
+.titulos2-, .titulos2-servicios {
+    color: $color-blanco;
+}
+
+.titulos2-servicios {
+    padding: 30px;
+}
+
+.titulos2serv {
+    font-family: $fuente-titulos;
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-beige;
+    margin: 20px;
+}
+
+.titulos3 {
+    font-family: $fuente-titulos;
+    font-size: 28px;
+    color: $color-blanco;
+    background-color: $color-negro;
+}
+
+.titulos3p {
+    font-family: $fuente-titulos;
+    font-size: 28px;
+    color: $color-blanco;
+    background-color: $color-negro;
+    text-align: center;
+    padding: 15px;
+}
+
+.parrafo {
+    font-family: $fuente-texto;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.parrafo-servicios {
+    color: $color-blanco;
+    font-family: $fuente-texto;
+    font-size: 1rem;
+    font-weight: 400;
+}

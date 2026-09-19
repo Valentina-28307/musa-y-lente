@@ -1,0 +1,55 @@
+
+@use "../utilities/variables" as *;
+
+header {
+    .titulos1 {
+        font-family: $fuente-titulos;
+        font-size: 3rem;
+        font-weight: 700;
+        color: $color-negro;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    &.inicio-servicios {
+        background-color: $color-beige;
+    }
+    .navegador {
+        text-align: center;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+
+        .image-logo {
+            width: 100px;
+            height: auto;
+        }
+
+        .navbar-collapse {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .links {
+            list-style: none;
+            text-decoration: none;
+            transition: color 0.3s ease, background-color 0.3s ease;
+
+            &:hover {
+                color: $color-beige;
+            }
+
+            &:focus {
+                outline: 2px solid $color-beige;
+                outline-offset: 2px;
+            }
+
+            &:active {
+                color: $color-negro;
+            }
+        }
+    }
+}

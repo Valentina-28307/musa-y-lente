@@ -1,303 +1,250 @@
-/*selector {
-    propiedad: valor
-}*/
-
-/* ===== BASE / RESET ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ===== HEADER / NAVBAR ===== */
-.image-logo {
-    width: 100px;
-    height: auto;
-}
-
-.titulos1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #000000;
-    text-align: center;
-}
-
-.navegador {
-    text-align: center;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-}
-
-.links {
-    list-style: none;
-    text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.links:hover {
-    color: #E8E2DA;
-}
-
-.links:focus {
-    outline: 2px solid #E8E2DA;
-    outline-offset: 2px;
-}
-
-.links:active {
-    color: #000000;
-}
-
-/* ===== MAIN ===== */
-.parrafo {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.parrafo-servicios {
-    color: #FFFFFF;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .titulos2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #000000;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000000;
 }
 
 .titulos2-, .titulos2-servicios {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .titulos2-servicios {
-    padding: 30px;
+  padding: 30px;
 }
 
 .titulos2serv {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #E8E2DA;
-    margin: 20px;
-}
-
-.inicio-servicios {
-    background-color: #E8E2DA;
-}
-
-.sobre-mi, .final {
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
-.presentacion {
-    text-align: center;
-    margin: 30px;
-}
-
-.fotografa {
-    background-color: #000000;
-    color: #FFFFFF;
-    padding: 30px;
-}
-
-.nuestra-esencia {
-    margin: 20px;
-}
-
-.servicio {
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
-.proyectos {
-    text-align: center;
-    margin: 50px;
-}
-
-.galeria- {
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.introduccion-servicios {
-    text-align: center;
-}
-
-.contacto {
-    text-align: center;
-    margin: 30px;
-}
-
-.contactanos {
-    text-align: center;
-    margin: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #E8E2DA;
+  margin: 20px;
 }
 
 .titulos3 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 28px;
-    color: #FFFFFF;
-    background-color: #000000;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  color: #FFFFFF;
+  background-color: #000000;
 }
 
 .titulos3p {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 28px;
-    color: #FFFFFF;
-    background-color: #000000;
-    text-align: center;
-    padding: 15px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  color: #FFFFFF;
+  background-color: #000000;
+  text-align: center;
+  padding: 15px;
 }
 
-.descripcion {
-    inline-size: none;
+.parrafo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.parrafo-servicios {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+header .titulos1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  background-color: transparent;
+}
+header.inicio-servicios {
+  background-color: #E8E2DA;
+}
+header .navegador {
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+header .navegador .image-logo {
+  width: 100px;
+  height: auto;
+}
+header .navegador .navbar-collapse {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+header .navegador .links {
+  list-style: none;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+header .navegador .links:hover {
+  color: #E8E2DA;
+}
+header .navegador .links:focus {
+  outline: 2px solid #E8E2DA;
+  outline-offset: 2px;
+}
+header .navegador .links:active {
+  color: #000000;
+}
+
+main .filas-columnas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "sobre-mi" "por-que";
+  gap: 30px;
+}
+main .filas-columnas .sobre-mi {
+  grid-area: sobre-mi;
+}
+main .filas-columnas .por-que {
+  grid-area: por-que;
+}
+@media (min-width: 1024px) {
+  main .filas-columnas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "sobre-mi por-que";
+  }
+}
+main .sobre-mi {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 20px 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+main .por-que {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+main .portafolio {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+main .galeria- {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 40px;
+  gap: 30px;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  main .galeria- {
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-areas: "imagen1 imagen2 texto";
+  }
+  main .galeria- .foto-uno {
+    grid-area: imagen1;
+  }
+  main .galeria- .foto-dos {
+    grid-area: imagen2;
+  }
+  main .galeria- .descripcion-proyecto {
+    grid-area: texto;
+  }
+  main .galeria- .descripcion-eventos {
+    grid-area: texto;
+  }
+}
+@media (min-width: 1024px) {
+  main .galeria-sesiones {
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas: "texto imagen1 imagen2";
+  }
+  main .galeria-sesiones .descripcion-sesiones {
+    grid-area: texto;
+  }
+  main .galeria-sesiones .foto-unos {
+    grid-area: imagen1;
+  }
+  main .galeria-sesiones .foto-doss {
+    grid-area: imagen2;
+  }
+}
+main .descripcion {
+  inline-size: none;
+}
+main.body-servicios {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/fondo-body-page-servicios.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .fotografa {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 30px;
+}
+main .formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+}
+footer .fuente {
+  color: #FFFFFF;
+}
+footer .lista-footer {
+  justify-content: center;
+  display: flex;
+  gap: 25px;
+  padding: 10px 0px;
+}
+footer .parrafo-footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 15px 0px;
+}
+
+.presentacion,
+.proyectos,
+.contacto,
+.contactanos {
+  text-align: center;
+  margin: 30px;
+}
+
+.proyectos {
+  margin: 50px;
+}
+
+.nuestra-esencia {
+  margin: 20px;
+}
+
+.introduccion-servicios {
+  text-align: center;
+}
+
+.servicio {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #000000);
+  color: #FFFFFF;
+  margin: 40px;
+  padding: 15px;
 }
 
 .image-proyecto {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 
-.sobre-mi, .por-que, .portafolio {
-    margin-bottom: 40px;
-}
-
-.sobre-mi {
-    padding: 10px 20px 40px;
-    text-align: center;
-}
-
-.por-que, .portafolio {
-    padding: 0 40px;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.servicio {
-    margin: 40px;
-    padding: 15px;
-}
-
-.filas-columnas {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "sobre-mi"
-        "por-que";
-    gap: 30px;
-}
-
-.sobre-mi {
-    grid-area: sobre-mi;
-}
-
-.por-que {
-    grid-area: por-que;
-}
-
-.galeria- {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.body-servicios {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.8)
-    ), url(../images/fondo-body-page-servicios.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.servicio {
-    background-color: transparent;
-    background-image: linear-gradient(180deg, #000000);
-}
-
-/* ===== FOOTER ===== */
-.final {
-    text-align: center;
-}
-
-.fuente {
-    color: #FFFFFF;
-}
-
-.parrafo-footer {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 15px 0px;
-}
-
-.lista-footer {
-    justify-content: center;
-    display: flex;
-    gap: 25px;
-    padding: 10px 0px;
-
-}
-
-.navbar-collapse {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-}
-
-/* ===== MEDIA QUERIES ===== */
-@media (min-width: 1024px) {
-    .filas-columnas {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "sobre-mi por-que";
-    }
-}
-
-@media (min-width: 1024px) {
-    .galeria- {
-        grid-template-columns: 1fr 1fr 3fr;
-        grid-template-areas:
-            "imagen1 imagen2 texto";
-    }
-    .foto-uno {
-        grid-area: imagen1;
-    }
-    .foto-dos {
-        grid-area: imagen2;
-    }
-    .descripcion-proyecto {
-        grid-area: texto;
-    }
-    .descripcion-eventos {
-        grid-area: texto;
-    }
-    .galeria-sesiones {
-        grid-template-columns: 3fr 1fr 1fr;
-        grid-template-areas:
-            "texto imagen1 imagen2";
-    }
-    .descripcion-sesiones {
-        grid-area: texto;
-    }
-    .foto-unos {
-        grid-area: imagen1;
-    }
-    .foto-doss {
-        grid-area: imagen2;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

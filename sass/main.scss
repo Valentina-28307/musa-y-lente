@@ -1,0 +1,15 @@
+@use "./utilities/variables" as *;
+@use "./utilities/mixins" as *;
+
+
+@use "./base/reset";
+@use "./base/tipografias";
+
+
+@use "./layout/header";
+@use "./layout/main-index";
+@use "./layout/footer";
+
+
+@use "./components/cajas-generales";
+@use "./components/cards";
