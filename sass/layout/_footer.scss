@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 footer {
     background-color: $color-negro;
@@ -10,11 +11,10 @@ footer {
     }
 
     .lista-footer {
-        justify-content: center;
-        display: flex;
-        gap: 25px;
-        padding: 10px 0px;
-    }
+    @include flex-center($gap: 25px);
+    padding: 10px 0px;
+}
+
 
     .parrafo-footer {
         font-family: $fuente-texto;

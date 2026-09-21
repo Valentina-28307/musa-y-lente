@@ -39,15 +39,22 @@
     padding: 15px;
 }
 
-.parrafo {
+%texto-base {
     font-family: $fuente-texto;
     font-size: 1rem;
     font-weight: 400;
 }
 
+.parrafo {
+    @extend %texto-base;
+}
+
 .parrafo-servicios {
+    @extend %texto-base;
     color: $color-blanco;
-    font-family: $fuente-texto;
-    font-size: 1rem;
-    font-weight: 400;
+}
+
+.parrafo-footer {
+    @extend %texto-base;
+    padding: 15px 0px;
 }

@@ -1,4 +1,4 @@
-@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .servicio {
     background-color: transparent;
@@ -6,9 +6,16 @@
     color: $color-blanco;
     margin: 40px;
     padding: 15px;
-}
+    @include transicion-suave(transform, 0.3s);
+    @include transicion-suave(box-shadow, 0.3s);
 
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+}
 .image-proyecto {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
 }
