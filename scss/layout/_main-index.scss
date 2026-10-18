@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 main {
     .filas-columnas {
@@ -43,34 +44,44 @@ main {
     }
 
     .galeria- {
-       display: grid;
-        grid-template-columns: 1fr;
-        padding: 40px;
-        gap: 30px;
-        align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px;
+    gap: 30px;
+    align-items: center;
 
-        @media (min-width: 1024px) {
-            grid-template-columns: 1fr 1fr 3fr;
-            grid-template-areas:
-                "imagen1 imagen2 texto";
+    @include breakpoint(768px) {
+        grid-template-columns: 1fr 1fr;
 
-            .foto-uno {
-                grid-area: imagen1;
-            }
-
-            .foto-dos {
-                grid-area: imagen2;
-            }
-
-            .descripcion-proyecto {
-                grid-area: texto;
-            }
-
-            .descripcion-eventos {
-                grid-area: texto;
-            }
+        .descripcion-proyecto,
+        .descripcion-eventos,
+        .descripcion-sesiones {
+            grid-column: 1 / -1;
         }
     }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr 3fr;
+        grid-template-areas:
+            "imagen1 imagen2 texto";
+
+        .foto-uno {
+            grid-area: imagen1;
+        }
+
+        .foto-dos {
+            grid-area: imagen2;
+        }
+
+        .descripcion-proyecto {
+            grid-area: texto;
+        }
+
+        .descripcion-eventos {
+            grid-area: texto;
+        }
+    }
+}
 
     .galeria-sesiones {
         @media (min-width: 1024px) {
