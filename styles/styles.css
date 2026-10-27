@@ -43,7 +43,7 @@
   padding: 15px;
 }
 
-.parrafo {
+.parrafo-footer, .parrafo-servicios, .parrafo {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -51,11 +51,22 @@
 
 .parrafo-servicios {
   color: #FFFFFF;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
 }
 
+.parrafo-footer {
+  padding: 15px 0px;
+}
+
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 header .titulos1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 3rem;
@@ -78,6 +89,7 @@ header .navegador {
 header .navegador .image-logo {
   width: 100px;
   height: auto;
+  animation: fadeInLogo 0.8s ease-out;
 }
 header .navegador .navbar-collapse {
   display: flex;
@@ -133,12 +145,35 @@ main .portafolio {
   padding: 0 40px;
   margin-bottom: 40px;
 }
+main .portafolio .carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+main .portafolio .carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  main .portafolio .carousel-item img {
+    height: 450px;
+  }
+}
 main .galeria- {
   display: grid;
   grid-template-columns: 1fr;
   padding: 40px;
   gap: 30px;
   align-items: center;
+}
+@media (min-width: 768px) {
+  main .galeria- {
+    grid-template-columns: 1fr 1fr;
+  }
+  main .galeria- .descripcion-proyecto,
+  main .galeria- .descripcion-eventos,
+  main .galeria- .descripcion-sesiones {
+    grid-column: 1/-1;
+  }
 }
 @media (min-width: 1024px) {
   main .galeria- {
@@ -191,6 +226,8 @@ main .formulario {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 footer {
@@ -202,8 +239,10 @@ footer .fuente {
   color: #FFFFFF;
 }
 footer .lista-footer {
-  justify-content: center;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 25px;
   padding: 10px 0px;
 }
@@ -240,10 +279,17 @@ footer .parrafo-footer {
   color: #FFFFFF;
   margin: 40px;
   padding: 15px;
+  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+.servicio:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .image-proyecto {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
 }
 
