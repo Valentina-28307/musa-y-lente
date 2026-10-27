@@ -38,10 +38,24 @@ main {
         margin-bottom: 40px;
     }
 
-    .portafolio {
-        padding: 0 40px;
-        margin-bottom: 40px;
+   .portafolio {
+    padding: 0 40px;
+    margin-bottom: 40px;
+
+    .carousel {
+        max-width: 800px;
+        margin: 0 auto;
     }
+
+    .carousel-item img {
+        height: 300px;
+        object-fit: cover;
+
+        @include breakpoint(768px) {
+            height: 450px;
+        }
+    }
+}
 
     .galeria- {
     display: grid;
@@ -125,8 +139,10 @@ main {
     }
 
     .formulario {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
 }
